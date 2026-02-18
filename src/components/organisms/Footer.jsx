@@ -26,7 +26,7 @@ const Footer = () => {
     legal: [
       { name: 'Privacy Policy', href: '/privacy' },
       { name: 'Terms of Service', href: '/terms' },
-      { name: 'License', href: 'https://github.com/your-username/showfarm/blob/main/LICENSE', external: true }
+      { name: 'License', href: 'https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE', external: true }
     ]
   }
 
