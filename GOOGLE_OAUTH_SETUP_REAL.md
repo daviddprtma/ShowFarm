@@ -8,7 +8,7 @@
 4. Go to Credentials → Create OAuth 2.0 Client ID
 5. Add authorized origins:
    - `http://localhost:3000`
-   - `https://showfarm.vercel.app`
+   - `https://show-farm.vercel.app`
 
 ## Step 2: Update Environment
 

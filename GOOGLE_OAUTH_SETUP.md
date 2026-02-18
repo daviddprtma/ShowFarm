@@ -27,8 +27,8 @@ For the **Hedera Hello Future: Apex Hackathon 2026**, ShowFarm includes a **demo
    - **App name**: ShowFarm
    - **User support email**: Your email
    - **Developer contact**: Your email
-   - **App domain**: https://showfarm.vercel.app
-   - **Authorized domains**: showfarm.vercel.app
+   - **App domain**: https://show-farm.vercel.app
+   - **Authorized domains**: show-farm.vercel.app
 
 ### Step 3: Create OAuth 2.0 Credentials
 
@@ -39,10 +39,10 @@ For the **Hedera Hello Future: Apex Hackathon 2026**, ShowFarm includes a **demo
    - **Name**: ShowFarm Web Client
    - **Authorized JavaScript origins**:
      - `http://localhost:3000` (development)
-     - `https://showfarm.vercel.app` (production)
+     - `https://show-farm.vercel.app` (production)
    - **Authorized redirect URIs**:
      - `http://localhost:3000/auth` (development)
-     - `https://showfarm.vercel.app/auth` (production)
+     - `https://show-farm.vercel.app/auth` (production)
 
 ### Step 4: Update Environment Variables
 
@@ -56,7 +56,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 ### Step 5: Domain Verification (Production)
 
 1. In Google Cloud Console, go to **Search Console**
-2. Add and verify your domain: `showfarm.vercel.app`
+2. Add and verify your domain: `show-farm.vercel.app`
 3. This enables the Google One Tap feature
 
 ## 🎯 Implementation Features
