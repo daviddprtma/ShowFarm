@@ -1,0 +1,42 @@
+{
+  "name": "ShowFarm - Learning Milestone Tracker",
+  "short_name": "ShowFarm",
+  "description": "Track your learning journey on the blockchain with verifiable NFT badges",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity", "blockchain"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/vite.svg", 
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Learning Entry",
+      "short_name": "New Entry",
+      "description": "Record a new learning milestone",
+      "url": "/log-entry",
+      "icons": [{ "src": "/vite.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "View Badges",
+      "short_name": "Badges",
+      "description": "Check your earned badges",
+      "url": "/badges",
+      "icons": [{ "src": "/vite.svg", "sizes": "192x192" }]
+    }
+  ]
+}
