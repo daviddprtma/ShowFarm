@@ -13,7 +13,7 @@ The Netlify function is returning "API key is invalid" because the environment v
 4. Add:
    ```
    Key: RESEND_API_KEY
-   Value: re_182Ve4zV_NwzabtQkVwm61jdFUaQLxBz6
+   Value: re_gHxGWpFm_Jtx4EDEScVFiNjbet8nLuhVX
    ```
 5. Click **Save**
 
