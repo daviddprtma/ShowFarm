@@ -210,12 +210,6 @@ const Auth = () => {
               
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-6">
-                <a href="/#features" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
-                  Features
-                </a>
-                <a href="/#how-it-works" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
-                  How It Works
-                </a>
                 <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
                   Home
                 </Link>
