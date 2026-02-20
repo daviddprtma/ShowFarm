@@ -155,7 +155,7 @@ export const supabaseService = {
         .from("users")
         .select("*")
         .eq("id", userId)
-        .single();
+        .maybeSingle();
 
       if (error) {
         console.error("❌ Supabase getUserProfile error:", error);
