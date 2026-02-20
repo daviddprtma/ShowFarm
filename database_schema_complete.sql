@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS entries (
 
 -- Create forum_posts table (MISSING - causing 404 errors)
 CREATE TABLE IF NOT EXISTS forum_posts (
-    id SERIAL PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     title TEXT NOT NULL,
     content TEXT NOT NULL,
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS forum_posts (
 
 -- Create course_enrollments table (MISSING - causing 404 errors)
 CREATE TABLE IF NOT EXISTS course_enrollments (
-    id SERIAL PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     course_id TEXT NOT NULL,
     course_title TEXT NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS course_enrollments (
 
 -- Create badges table
 CREATE TABLE IF NOT EXISTS badges (
-    id SERIAL PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     badge_name TEXT NOT NULL,
     badge_description TEXT,
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS badges (
 
 -- Create forum_categories table
 CREATE TABLE IF NOT EXISTS forum_categories (
-    id SERIAL PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     name TEXT NOT NULL,
     description TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
@@ -147,14 +147,14 @@ GRANT USAGE ON SCHEMA public TO anon, authenticated;
 GRANT ALL ON ALL TABLES IN SCHEMA public TO anon, authenticated;
 GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO anon, authenticated;
 
--- Insert demo data for testing (optional)
-INSERT INTO users (id, username, email, password, full_name, total_entries, total_badges) VALUES 
-('demo_user_1', 'demo_learner', 'demo@showfarm.dev', 'demo123', 'Demo Learner', 5, 2)
-ON CONFLICT (id) DO NOTHING;
+-- Insert demo data for testing (optional) (uncomment if you wabt to test it)
+-- INSERT INTO users (id, username, email, password, full_name, total_entries, total_badges) VALUES 
+-- ('demo_user_1', 'demo_learner', 'demo@showfarm.dev', 'demo123', 'Demo Learner', 5, 2)
+-- ON CONFLICT (id) DO NOTHING;
 
-INSERT INTO entries (id, userid, title, description, category, date) VALUES 
-('demo_entry_1', 'demo_user_1', 'First Learning Entry', 'Completed React basics tutorial', 'tutorial', CURRENT_DATE)
-ON CONFLICT (id) DO NOTHING;
+-- INSERT INTO entries (id, userid, title, description, category, date) VALUES 
+-- ('demo_entry_1', 'demo_user_1', 'First Learning Entry', 'Completed React basics tutorial', 'tutorial', CURRENT_DATE)
+-- ON CONFLICT (id) DO NOTHING;
 
 -- Verify tables exist
 SELECT 
