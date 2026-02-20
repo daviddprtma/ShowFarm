@@ -5,6 +5,7 @@
 For the **Hedera Hello Future: Apex Hackathon 2026**, ShowFarm includes a **demo mode** that simulates Google OAuth without requiring actual Google credentials. This allows judges and users to experience the full authentication flow.
 
 ### Demo Features
+
 - ✅ **Realistic Google Sign-In UI** with official Google styling
 - ✅ **Simulated OAuth Flow** with loading states and animations
 - ✅ **Demo User Profiles** with realistic data
@@ -17,7 +18,7 @@ For the **Hedera Hello Future: Apex Hackathon 2026**, ShowFarm includes a **demo
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing one
-3. Enable the **Google+ API** and **Google Identity Services**
+3. Enable the **Google+ API**, **Identity Platform API**, & ** Identity and Access Management (IAM) API**
 
 ### Step 2: Configure OAuth Consent Screen
 
@@ -62,6 +63,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 ## 🎯 Implementation Features
 
 ### Current Implementation
+
 - **Google Identity Services** integration
 - **One-click sign-in/sign-up**
 - **Automatic profile data population**
@@ -71,6 +73,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 - **Demo mode** for hackathon presentation
 
 ### Security Features
+
 - ✅ **JWT token validation**
 - ✅ **Email verification** from Google
 - ✅ **Secure credential handling**
@@ -78,6 +81,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 - ✅ **HTTPS-only in production**
 
 ### User Experience
+
 - ✅ **One-click authentication**
 - ✅ **Automatic profile setup**
 - ✅ **Seamless wallet integration**
@@ -87,6 +91,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 ## 🏆 Hackathon Advantages
 
 ### Why This Helps Win
+
 1. **Modern UX**: Users expect Google Sign-In in 2025
 2. **Reduced Friction**: No password creation/remembering
 3. **Professional Polish**: Shows enterprise-ready thinking
@@ -95,6 +100,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 6. **Trust**: Users trust Google authentication
 
 ### Demo Script for Judges
+
 1. **Show the Google button** - "Notice the professional Google branding"
 2. **Click to authenticate** - "Watch the realistic loading state"
 3. **Profile auto-population** - "User data automatically populated from Google"
@@ -104,6 +110,7 @@ VITE_GOOGLE_CLIENT_ID=your_actual_google_client_id_here.apps.googleusercontent.c
 ## 📊 Technical Implementation
 
 ### Architecture
+
 ```
 User clicks Google Sign-In
     ↓
@@ -121,6 +128,7 @@ Dashboard access
 ```
 
 ### Code Structure
+
 - `googleAuthService.js` - Core Google OAuth logic
 - `GoogleSignInButton.jsx` - UI component
 - `AuthContext.jsx` - Integration with auth system
@@ -129,6 +137,7 @@ Dashboard access
 ## 🚀 Future Enhancements
 
 ### Post-Hackathon Roadmap
+
 - [ ] **Google One Tap** for returning users
 - [ ] **Google Account Linking** for existing users
 - [ ] **Google Workspace** integration for enterprises
@@ -139,4 +148,4 @@ Dashboard access
 
 **🏆 Built for Hedera Hello Future: Apex Hackathon 2026**
 
-*This implementation demonstrates enterprise-ready authentication that scales to millions of users while maintaining the security and user experience standards expected in modern web applications.*
+_This implementation demonstrates enterprise-ready authentication that scales to millions of users while maintaining the security and user experience standards expected in modern web applications._
