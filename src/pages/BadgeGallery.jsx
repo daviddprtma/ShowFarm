@@ -675,14 +675,6 @@ const BadgeGallery = () => {
                         <Share2 className="w-4 h-4 mr-2" />
                         Share Badge
                       </Button>
-                      <Button
-                        variant="outline"
-                        onClick={() => window.open("#", "_blank")}
-                        className="flex-1"
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        View on Chain
-                      </Button>
                     </>
                   ) : (
                     <div className="flex-1 text-center py-3 bg-gray-100 dark:bg-gray-800 rounded-lg">
