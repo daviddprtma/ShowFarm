@@ -43,16 +43,19 @@ This is a pitch deck for
 - Smart Contracts: Automated NFT minting and learning analytics.
 - Token Service: Native NFT badges without gas fees (0%).
 - File Service: Decentralized certificate and content storage.
+  
 🏆 Intelligent Achievement System
 - AI-Powered Rewards: Smart contract-triggered badge minting by Groq AI.
 - Dynamic Rarity: Common to Legendary badges based on achievements.
 - Social Verification: Community-driven skill validation by sharing the success journey to social media apps.
 - Cross-Platform Sync: Seamless integration with major learning platforms.
+  
 📊 Enterprise Analytics
 - Real-Time Insights: Blockchain-based learning analytics.
 - Predictive Modeling: AI-powered career path recommendations by Groq AI.
 - Employer Dashboards: Corporate learning management integration.
 - Government Reporting: National skill development tracking.
+
 🎨 Production-Grade Experience
 - 99.9% Uptime: Enterprise-level reliability and performance.
 - Sub-2s Load Times: Optimized for global accessibility.
