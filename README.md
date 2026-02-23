@@ -33,10 +33,10 @@ The project is built by this techstack:
 - [Resend](https://resend.com/)
 - [GroqAI](https://groq.com/)
 
-## Pitch Deck
+## Pitch Deck 📖
 This is a pitch deck for 
 
-## Key Feature
+## Key Feature⭐
 🔐 Advanced Blockchain Integration
 - Multi-Service Architecture: Utilizing 5 Hedera services for learning the topics.
 - Consensus Service: Tamper-proof learning records with global verification by Hedera.
@@ -150,7 +150,7 @@ npm run deploy:enterprise
 npm run monitor:production
    ```
 
-## Roadmap
+## Roadmap 
 
 Phase 1 : Hedera Apex Hackathon 2026 ☑️
 - [x] Complete Hedera Integration: 5 services implemented -> DONE
@@ -179,6 +179,6 @@ Phase 4: Educational Infrastructure ~ ETA will come soon and expect to come when
 
 Distributed under the MIT License. See [MIT License](https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE) for more information.
 
-## Demo Video
+## Demo Video 🎥
 <br> 
 [![IMAGE ALT TEXT HERE]()]()
