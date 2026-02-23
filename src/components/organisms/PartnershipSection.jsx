@@ -1,136 +1,137 @@
-import { motion } from 'framer-motion'
-import { useNavigate } from 'react-router-dom'
-import { 
-  Building2, 
-  GraduationCap, 
-  Users, 
-  TrendingUp, 
-  Award, 
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import {
+  Building2,
+  GraduationCap,
+  Users,
+  TrendingUp,
+  Award,
   Globe,
   CheckCircle,
   ExternalLink,
   Star,
-  Briefcase
-} from 'lucide-react'
-import Card from '@/components/atoms/Card'
-import Button from '@/components/atoms/Button'
+  Briefcase,
+} from "lucide-react";
+import Card from "@/components/atoms/Card";
+import Button from "@/components/atoms/Button";
 
 const PartnershipSection = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const partners = [
     {
-      name: 'Coursera',
-      type: 'Education Platform',
-      logo: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=100&fit=crop',
-      description: 'Integration discussions for verified course completion certificates',
-      impact: '100M+ learners',
-      status: 'In Negotiation',
-      url: '#'
+      name: "Coursera",
+      type: "Education Platform",
+      logo: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200&h=100&fit=crop",
+      description:
+        "Integration discussions for verified course completion certificates",
+      impact: "100M+ learners",
+      status: "In Negotiation",
+      url: "#",
     },
     {
-      name: 'Codecademy',
-      type: 'Coding Education',
-      logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=100&fit=crop',
-      description: 'Blockchain verification for coding bootcamp graduates',
-      impact: '45M+ developers',
-      status: 'Partnership Interest',
-      url: '#'
+      name: "Codecademy",
+      type: "Coding Education",
+      logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=200&h=100&fit=crop",
+      description: "Blockchain verification for coding bootcamp graduates",
+      impact: "45M+ developers",
+      status: "Partnership Interest",
+      url: "#",
     },
     {
-      name: 'LinkedIn Learning',
-      type: 'Professional Development',
-      logo: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=100&fit=crop',
-      description: 'Professional skill verification for career advancement',
-      impact: '25M+ professionals',
-      status: 'Initial Contact',
-      url: '#'
-    }
-  ]
+      name: "LinkedIn Learning",
+      type: "Professional Development",
+      logo: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=100&fit=crop",
+      description: "Professional skill verification for career advancement",
+      impact: "25M+ professionals",
+      status: "Initial Contact",
+      url: "#",
+    },
+  ];
 
   const marketData = [
     {
-      metric: 'Global E-Learning Market',
-      value: '$315B',
-      growth: '+20% CAGR',
+      metric: "Global E-Learning Market",
+      value: "$315B",
+      growth: "+20% CAGR",
       icon: Globe,
-      description: 'Total addressable market by 2025'
+      description: "Total addressable market by 2025",
     },
     {
-      metric: 'Self-Taught Developers',
-      value: '69%',
-      growth: '+15% annually',
+      metric: "Self-Taught Developers",
+      value: "69%",
+      growth: "+15% annually",
       icon: Users,
-      description: 'Of developers are self-taught (Stack Overflow 2023)'
+      description: "Of developers are self-taught (Stack Overflow 2023)",
     },
     {
-      metric: 'Remote Workers',
-      value: '42%',
-      growth: '+25% since 2020',
+      metric: "Remote Workers",
+      value: "42%",
+      growth: "+25% since 2020",
       icon: Briefcase,
-      description: 'Need verifiable skills for remote opportunities'
+      description: "Need verifiable skills for remote opportunities",
     },
     {
-      metric: 'Skill Verification Demand',
-      value: '87%',
-      growth: '+30% YoY',
+      metric: "Skill Verification Demand",
+      value: "87%",
+      growth: "+30% YoY",
       icon: Award,
-      description: 'Of employers want verified skill proof'
-    }
-  ]
+      description: "Of employers want verified skill proof",
+    },
+  ];
 
   const userFeedback = [
     {
-      category: 'Beta Testers',
+      category: "Beta Testers",
       count: 247,
       satisfaction: 94,
       feedback: [
-        'Revolutionary approach to skill verification',
-        'Finally, a way to prove self-taught abilities',
-        'The blockchain aspect adds incredible credibility'
-      ]
+        "Revolutionary approach to skill verification",
+        "Finally, a way to prove self-taught abilities",
+        "The blockchain aspect adds incredible credibility",
+      ],
     },
     {
-      category: 'Employers',
+      category: "Employers",
       count: 89,
       satisfaction: 91,
       feedback: [
-        'Instant verification saves hiring time',
-        'Trust in candidate skills increased significantly',
-        'Reduces interview rounds by 40%'
-      ]
+        "Instant verification saves hiring time",
+        "Trust in candidate skills increased significantly",
+        "Reduces interview rounds by 40%",
+      ],
     },
     {
-      category: 'Educators',
+      category: "Educators",
       count: 156,
       satisfaction: 96,
       feedback: [
-        'Students more motivated with blockchain badges',
-        'Tamper-proof certificates solve credibility issues',
-        'Integration with existing platforms is seamless'
-      ]
-    }
-  ]
+        "Students more motivated with blockchain badges",
+        "Tamper-proof certificates solve credibility issues",
+        "Integration with existing platforms is seamless",
+      ],
+    },
+  ];
 
   const governmentPrograms = [
     {
-      country: 'Indonesia',
-      program: 'Digital Talent Scholarship',
-      status: 'Pilot Program',
-      impact: '50,000+ digital residents'
+      country: "Indonesia",
+      program: "Digital Talent Scholarship",
+      status: "Pilot Program",
+      impact: "50,000+ digital residents",
     },
     {
-      country: 'Singapore',
-      program: 'SkillsFuture Initiative',
-      status: 'Partnership Interest',
-      impact: '5.7M citizens eligible'
+      country: "Singapore",
+      program: "SkillsFuture Initiative",
+      status: "Partnership Interest",
+      impact: "5.7M citizens eligible",
     },
     {
-      country: 'UAE',
-      program: 'National AI Strategy 2031',
-      status: 'Initial Discussions',
-      impact: '10M population target'
-    }
-  ]
+      country: "Philipphines",
+      program: "National AI Strategy 2031",
+      status: "Initial Discussions",
+      impact: "10M population target",
+    },
+  ];
 
   return (
     <section className="py-24 bg-white dark:bg-gray-900">
@@ -147,8 +148,8 @@ const PartnershipSection = () => {
             Market Validation & Partnerships
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Strong market demand, strategic partnerships, and proven user adoption 
-            demonstrate ShowFarm's potential for global impact
+            Strong market demand, strategic partnerships, and proven user
+            adoption demonstrate ShowFarm's potential for global impact
           </p>
         </motion.div>
 
@@ -163,10 +164,10 @@ const PartnershipSection = () => {
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Market Opportunity
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {marketData.map((data, index) => {
-              const Icon = data.icon
+              const Icon = data.icon;
               return (
                 <motion.div
                   key={data.metric}
@@ -191,7 +192,7 @@ const PartnershipSection = () => {
                     </p>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </motion.div>
@@ -207,7 +208,7 @@ const PartnershipSection = () => {
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Strategic Partnerships
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {partners.map((partner, index) => (
               <motion.div
@@ -224,46 +225,48 @@ const PartnershipSection = () => {
                       alt={partner.name}
                       className="w-16 h-16 rounded-lg object-cover"
                     />
-                    
+
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-2">
                         <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
                           {partner.name}
                         </h4>
-                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          partner.status === 'Active Partnership'
-                            ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-                            : partner.status === 'In Negotiation'
-                            ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
-                            : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-                        }`}>
+                        <span
+                          className={`px-3 py-1 rounded-full text-xs font-medium ${
+                            partner.status === "Active Partnership"
+                              ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                              : partner.status === "In Negotiation"
+                                ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
+                                : "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                          }`}
+                        >
                           {partner.status}
                         </span>
                       </div>
-                      
+
                       <div className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">
                         {partner.type}
                       </div>
-                      
+
                       <p className="text-gray-600 dark:text-gray-300 mb-4">
                         {partner.description}
                       </p>
-                      
+
                       <div className="flex items-center justify-between">
                         <div className="text-sm">
                           <span className="font-medium text-gray-900 dark:text-gray-100">
-                            Impact: 
+                            Impact:
                           </span>
                           <span className="text-gray-600 dark:text-gray-300 ml-1">
                             {partner.impact}
                           </span>
                         </div>
-                        
-                        {partner.url !== '#' && (
+
+                        {partner.url !== "#" && (
                           <Button
                             size="sm"
                             variant="outline"
-                            onClick={() => window.open(partner.url, '_blank')}
+                            onClick={() => window.open(partner.url, "_blank")}
                           >
                             <ExternalLink className="w-3 h-3 mr-1" />
                             Visit
@@ -289,7 +292,7 @@ const PartnershipSection = () => {
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             User Validation & Feedback
           </h3>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {userFeedback.map((group, index) => (
               <motion.div
@@ -310,7 +313,7 @@ const PartnershipSection = () => {
                     <div className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                       Participants
                     </div>
-                    
+
                     {/* Satisfaction Score */}
                     <div className="flex items-center justify-center mb-4">
                       <Star className="w-5 h-5 text-yellow-400 fill-current mr-2" />
@@ -322,7 +325,7 @@ const PartnershipSection = () => {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-3">
                     {group.feedback.map((comment, i) => (
                       <div key={i} className="flex items-start space-x-2">
@@ -350,7 +353,7 @@ const PartnershipSection = () => {
           <h3 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Government & Enterprise Programs
           </h3>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {governmentPrograms.map((program, index) => (
@@ -365,23 +368,25 @@ const PartnershipSection = () => {
                     <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Building2 className="w-6 h-6 text-white" />
                     </div>
-                    
+
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
                       {program.country}
                     </h4>
-                    
+
                     <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
                       {program.program}
                     </p>
-                    
-                    <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${
-                      program.status === 'Pilot Program'
-                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-                        : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
-                    }`}>
+
+                    <div
+                      className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-3 ${
+                        program.status === "Pilot Program"
+                          ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                          : "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                      }`}
+                    >
                       {program.status}
                     </div>
-                    
+
                     <p className="text-xs text-gray-500 dark:text-gray-400">
                       {program.impact}
                     </p>
@@ -405,26 +410,30 @@ const PartnershipSection = () => {
               Join the Future of Skill Verification
             </h3>
             <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              With proven market demand, strategic partnerships, and strong user validation, 
-              ShowFarm is positioned to revolutionize how the world verifies and trusts skills.
+              With proven market demand, strategic partnerships, and strong user
+              validation, ShowFarm is positioned to revolutionize how the world
+              verifies and trusts skills.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
+              <Button
                 size="lg"
                 onClick={() => {
-                  navigate('/auth?mode=register')
-                  setTimeout(() => window.scrollTo(0, 0), 100)
+                  navigate("/auth?mode=register");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
                 }}
               >
                 <Users className="w-5 h-5 mr-2" />
                 Join Beta Program
               </Button>
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 variant="outline"
                 onClick={() => {
-                  window.open('mailto:partnerships@showfarm.dev?subject=Partnership Inquiry&body=Hi, I\'m interested in partnering with ShowFarm for skill verification solutions.', '_blank')
+                  window.open(
+                    "mailto:partnerships@showfarm.dev?subject=Partnership Inquiry&body=Hi, I'm interested in partnering with ShowFarm for skill verification solutions.",
+                    "_blank",
+                  );
                 }}
               >
                 <Building2 className="w-5 h-5 mr-2" />
@@ -435,7 +444,7 @@ const PartnershipSection = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PartnershipSection
+export default PartnershipSection;
