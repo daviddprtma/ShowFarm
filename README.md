@@ -17,7 +17,7 @@ A decentralized tracker platform for self-taught learning built by Hedera.
 
 ## About The Project
 
-ShowFarm is a decentralized tracker platform for self-taught learning built by Hedera. Record milestones, earn NFT badges, and verify your progress publicly via HashScan. With a modern UX, blockchain-backed entries, and dynamic analytics, ShowFarm transforms your journey into trusted digital credentials. No worry if you're a beginner who wants to learn something new about hedera, this platform can help you how to engage user to know KYC for the first time learning decentralized web3 platform🙌😍.
+ShowFarm is a decentralized tracker platform for self-taught learning built by Hedera. Record milestones, earn NFT badges, and verify your progress publicly via HashScan. With a modern UI/UX, blockchain-backed entries, and dynamic analytics, ShowFarm transforms your journey into trusted digital credentials. No worry if you're a beginner who wants to learn something new about hedera, this platform can help you how to engage user to know KYC for the first time learning decentralized web3 platform🙌😍.
 ### Built With
 
 The project is built by this techstack:
@@ -180,5 +180,7 @@ Phase 4: Educational Infrastructure ~ ETA will come soon and expect to come when
 Distributed under the MIT License. See [MIT License](https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE) for more information.
 
 ## Demo Video 🎥
+Here's the demo video for ShowFarm👇
 <br> 
-[![IMAGE ALT TEXT HERE]()]()
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-1pzrJVnuTs/0.jpg)](https://www.youtube.com/watch?v=-1pzrJVnuTs)
