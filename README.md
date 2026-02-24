@@ -34,7 +34,7 @@ The project is built by this techstack:
 - [GroqAI](https://groq.com/)
 
 ## Pitch Deck 📖
-This is a pitch deck for 
+This is a pitch deck for [ShowFarm](https://drive.google.com/drive/folders/1OuRsrdkDu7gXUSLT-gfpO3GnF5dR9O6F?usp=sharing)
 
 ## Key Feature⭐
 🔐 Advanced Blockchain Integration
