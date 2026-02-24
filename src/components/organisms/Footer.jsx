@@ -1,57 +1,59 @@
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
-import { 
-  Github, 
-  Twitter, 
-  Linkedin, 
-  Mail, 
-  Heart, 
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import {
+  Github,
+  Twitter,
+  Linkedin,
+  Mail,
+  Heart,
   ExternalLink,
   BookOpen,
   Shield,
   Zap,
-  Globe
-} from 'lucide-react'
+  Globe,
+} from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     product: [
-      { name: 'Dashboard', href: '/dashboard' },
-      { name: 'Badge Gallery', href: '/badges' },
-      { name: 'Log Entry', href: '/log-entry' },
-      { name: 'Profile', href: '/profile' }
+      { name: "Dashboard", href: "/dashboard" },
+      { name: "Badge Gallery", href: "/badges" },
+      { name: "Log Entry", href: "/log-entry" },
+      { name: "Profile", href: "/profile" },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Service', href: '/terms' },
-      { name: 'License', href: 'https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE', external: true }
-    ]
-  }
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Terms of Service", href: "/terms" },
+      {
+        name: "License",
+        href: "https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE",
+        external: true,
+      },
+    ],
+  };
 
   const features = [
     {
       icon: Shield,
-      title: 'Blockchain Verified',
-      description: 'Immutable proof on Hedera'
+      title: "Blockchain Verified",
+      description: "Immutable proof on Hedera",
     },
     {
       icon: Zap,
-      title: 'Lightning Fast',
-      description: 'Powered by Vite & React'
+      title: "Lightning Fast",
+      description: "Powered by Vite & React",
     },
     {
       icon: Globe,
-      title: 'Globally Accessible',
-      description: 'Verify anywhere, anytime'
-    }
-  ]
+      title: "Globally Accessible",
+      description: "Verify anywhere, anytime",
+    },
+  ];
 
   return (
     <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
-
-
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -65,22 +67,27 @@ const Footer = () => {
             >
               <Link to="/" className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">SF</span>
+                  <img
+                    src="/ShowFarm.jpg"
+                    alt="ShowFarm Logo"
+                    className="w-5 h-5"
+                  />
                 </div>
                 <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   ShowFarm
                 </span>
               </Link>
-              
+
               <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                The future of learning verification. Record your development journey on the blockchain 
-                and earn verifiable badges that prove your skills to the world.
+                The future of learning verification. Record your development
+                journey on the blockchain and earn verifiable badges that prove
+                your skills to the world.
               </p>
 
               {/* Feature Highlights */}
               <div className="space-y-3">
                 {features.map((feature, index) => {
-                  const Icon = feature.icon
+                  const Icon = feature.icon;
                   return (
                     <motion.div
                       key={feature.title}
@@ -102,7 +109,7 @@ const Footer = () => {
                         </div>
                       </div>
                     </motion.div>
-                  )
+                  );
                 })}
               </div>
             </motion.div>
@@ -111,49 +118,53 @@ const Footer = () => {
           {/* Links Sections */}
           <div className="lg:col-span-2">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {Object.entries(footerLinks).filter(([category]) => category !== 'legal').map(([category, links], categoryIndex) => (
-                <motion.div
-                  key={category}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: categoryIndex * 0.1 }}
-                >
-                  <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider mb-4">
-                    {category}
-                  </h3>
-                  <ul className="space-y-3">
-                    {links.map((link, linkIndex) => (
-                      <motion.li
-                        key={link.name}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: (categoryIndex * 0.1) + (linkIndex * 0.05) }}
-                      >
-                        {link.external ? (
-                          <a
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group"
-                          >
-                            {link.name}
-                            <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                          </a>
-                        ) : (
-                          <Link
-                            to={link.href}
-                            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-                          >
-                            {link.name}
-                          </Link>
-                        )}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
+              {Object.entries(footerLinks)
+                .filter(([category]) => category !== "legal")
+                .map(([category, links], categoryIndex) => (
+                  <motion.div
+                    key={category}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: categoryIndex * 0.1 }}
+                  >
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider mb-4">
+                      {category}
+                    </h3>
+                    <ul className="space-y-3">
+                      {links.map((link, linkIndex) => (
+                        <motion.li
+                          key={link.name}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{
+                            delay: categoryIndex * 0.1 + linkIndex * 0.05,
+                          }}
+                        >
+                          {link.external ? (
+                            <a
+                              href={link.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group"
+                            >
+                              {link.name}
+                              <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </a>
+                          ) : (
+                            <Link
+                              to={link.href}
+                              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                            >
+                              {link.name}
+                            </Link>
+                          )}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                ))}
             </div>
           </div>
         </div>
@@ -198,15 +209,25 @@ const Footer = () => {
               className="flex items-center space-x-4"
             >
               {[
-                { icon: Github, href: 'https://github.com/daviddprtma', label: 'GitHub' },
-                { icon: Mail, href: 'mailto:support@showfarm.dev', label: 'Email' }
+                {
+                  icon: Github,
+                  href: "https://github.com/daviddprtma",
+                  label: "GitHub",
+                },
+                {
+                  icon: Mail,
+                  href: "mailto:support@showfarm.dev",
+                  label: "Email",
+                },
               ].map((social, index) => {
-                const Icon = social.icon
+                const Icon = social.icon;
                 return (
                   <motion.a
                     key={social.label}
                     href={social.href}
-                    target={social.href.startsWith('mailto:') ? '_self' : '_blank'}
+                    target={
+                      social.href.startsWith("mailto:") ? "_self" : "_blank"
+                    }
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200 shadow-sm"
                     whileHover={{ scale: 1.1, y: -2 }}
@@ -219,7 +240,7 @@ const Footer = () => {
                   >
                     <Icon className="w-4 h-4" />
                   </motion.a>
-                )
+                );
               })}
             </motion.div>
 
@@ -247,7 +268,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
