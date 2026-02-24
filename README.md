@@ -180,5 +180,7 @@ Phase 4: Educational Infrastructure ~ ETA will come soon and expect to come when
 Distributed under the MIT License. See [MIT License](https://github.com/daviddprtma/ShowFarm/blob/main/LICENSE) for more information.
 
 ## Demo Video 🎥
+Here's the demo video for ShowFarm👇
 <br> 
-[![IMAGE ALT TEXT HERE]()]()
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-1pzrJVnuTs/0.jpg)](https://www.youtube.com/watch?v=-1pzrJVnuTs)
